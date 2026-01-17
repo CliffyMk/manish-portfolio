@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Kumar | Technical Lead & Software Architect</title>
+    <meta name="description"
+        content="Software Architect with 10+ years of expertise delivering scalable, secure full-stack solutions. Angular, Node.js, System Design specialist.">
+    <meta name="keywords" content="Software Architect, Technical Lead, Angular, Node.js, Full Stack Developer, Pune">
+    <meta name="author" content="Manish Kumar">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Manish Kumar | Technical Lead & Software Architect">
+    <meta property="og:description" content="10+ years crafting scalable solutions. Angular, Node.js, System Design.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-text">
+                <span>M</span><span>A</span><span>N</span><span>I</span><span>S</span><span>H</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <a href="#home">MK<span class="accent">.</span></a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary">Let's Talk</a>
+        </div>
+        <div class="nav-hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hi! I'm <span class="gradient-text">Manish</span></span>
+                <span class="title-line">Technical Lead &</span>
+                <span class="title-line">Software <span class="outline-text">Architect</span></span>
+            </h1>
+            <p class="hero-subtitle">
+                Crafting scalable, secure, and efficient full-stack solutions for 10+ years.
+                <br>Bridging business needs with technical excellence.
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary btn-large">
+                    <span>Get in Touch</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+                <a href="#projects" class="btn btn-secondary btn-large">
+                    <span>View Projects</span>
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll Down</span>
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Years of Experience</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="50">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                <span class="stat-label">Team Members Led</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Building the Future,<br><span class="gradient-text">One Line at a Time</span>
+                </h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>Software Architect</strong> based in Pune, India, with over a decade of hands-on
+                        expertise
+                        delivering scalable, secure, and efficient full-stack solutions.
+                    </p>
+                    <p>
+                        I specialize in bridging business needs with technical execution through strategic consulting
+                        and mentorship. My proven track record includes leading multi-disciplinary teams, designing
+                        robust architectures, and driving adoption of cutting-edge technologies.
+                    </p>
+                    <p>
+                        Currently at <strong>Infosys</strong>, I lead Angular modernization initiatives and micro
+                        frontend
+                        migrations, consistently improving performance and scalability across enterprise platforms.
+                    </p>
+                    <div class="about-cta">
+                        <a href="https://www.linkedin.com/in/manish-angular-lead" target="_blank"
+                            class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:nodonlydeveloper@gmail.com" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <span>Email Me</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="about-skills">
+                    <h3>Core Competencies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Angular</span>
+                                <span class="skill-tag">NgRx</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Ionic</span>
+                                <span class="skill-tag">Storybook</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend & Infra</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">AWS</span>
+                                <span class="skill-tag">GraphQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Architecture</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Micro Frontends</span>
+                                <span class="skill-tag">System Design</span>
+                                <span class="skill-tag">REST APIs</span>
+                                <span class="skill-tag">CI/CD</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Leadership</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Team Leadership</span>
+                                <span class="skill-tag">Mentoring</span>
+                                <span class="skill-tag">Agile/Scrum</span>
+                                <span class="skill-tag">Consulting</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="section-container">
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>Building scalable web applications using Angular, React, Node.js with robust backend
+                        architectures and secure RESTful APIs.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3>System Architecture</h3>
+                    <p>Designing micro frontend architectures, scalable UI systems, and performance-optimized solutions
+                        for enterprise platforms.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3>Technical Leadership</h3>
+                    <p>Leading multi-disciplinary teams, driving knowledge-sharing, mentoring developers, and aligning
+                        IT solutions with business objectives.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3>Performance & Security</h3>
+                    <p>Implementing SAST tools, security best practices, and performance optimizations. Expertise with
+                        BlackDuck, Fortify, and SonarQube.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Experience</span>
+                <h2 class="section-title">My Professional<br><span class="gradient-text">Journey</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>Infosys</h3>
+                                <span class="timeline-role">Specialist Programmer</span>
+                            </div>
+                            <span class="timeline-date">Nov 2020 – Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Led Angular modernisation and micro frontend migration for McCamish Insurance platform,
+                                reducing load times by <strong>15%</strong></li>
+                            <li>Directed Angular 19 upgrade across modules, improving app performance by
+                                <strong>20%</strong></li>
+                            <li>Created component libraries reducing cross-project exposure by <strong>40%</strong></li>
+                            <li>Architected REST APIs for Policy360 platform enhancing data throughput</li>
+                            <li>Mentored team of developers, driving knowledge-sharing initiatives</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>Western Union</h3>
+                                <span class="timeline-role">Associate</span>
+                            </div>
+                            <span class="timeline-date">Feb 2018 – Nov 2020</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Delivered Video-KYC feature for Spain app, increasing verification efficiency by
+                                <strong>30%</strong></li>
+                            <li>Worked on Progressive Registration for USA app, increasing registrations by
+                                <strong>40%</strong></li>
+                            <li>Migrated USA mobile app from Ionic to React, reducing crash rates by
+                                <strong>30%</strong></li>
+                            <li>Developed UI screens for Spain, Canada, USA mobile applications</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>Xoriant Solutions</h3>
+                                <span class="timeline-role">Software Developer</span>
+                            </div>
+                            <span class="timeline-date">Sept 2015 – Feb 2018</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed document storage system for Citi FRBSDA, improving retrieval time by
+                                <strong>20%</strong></li>
+                            <li>Designed front-end for Elli Mae Web Application ensuring compliance</li>
+                            <li>Collaborated with cross-functional teams using ExtJS, Node.js, MongoDB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-company">
+                                <h3>RASA Life Science</h3>
+                                <span class="timeline-role">Software Intern</span>
+                            </div>
+                            <span class="timeline-date">June 2014 – Feb 2015</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Developed front end for ERP application integrating Finance, HR, Accounting modules</li>
+                            <li>Designed and optimised database schema improving data integrity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Applications I<br><span class="gradient-text">Own & Manage</span></h2>
+            </div>
+            <div class="projects-grid">
+                <a href="https://trezzo.app" target="_blank" class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-gradient"></div>
+                        <div class="project-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>SaaS</span>
+                            <span>Full Stack</span>
+                            <span>Production</span>
+                        </div>
+                        <h3>Trezzo.app</h3>
+                        <p>A comprehensive SaaS platform built from ground up. Full-stack application featuring modern
+                            architecture, scalable infrastructure, and user-centric design.</p>
+                        <div class="project-link">
+                            <span>Visit Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scrapper.trezzo.app" target="_blank" class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-gradient gradient-alt"></div>
+                        <div class="project-icon">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                                <path d="M8 10h.01M12 10h.01M16 10h.01" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Automation</span>
+                            <span>WhatsApp</span>
+                            <span>Node.js</span>
+                        </div>
+                        <h3>Lead Scrapper</h3>
+                        <p>Intelligent WhatsApp automation tool that monitors groups 24/7 for keyword matches and sends
+                            instant alerts. Built with Node.js, SQLite, and real-time processing.</p>
+                        <div class="project-link">
+                            <span>Visit Project</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M7 17L17 7M17 7H7M17 7v10" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contact</span>
+                    <h2 class="section-title">Let's Build<br><span class="gradient-text">Something Amazing</span></h2>
+                    <p>Have a project in mind or want to discuss an opportunity? I'm always open to conversations about
+                        technology, architecture, and innovation.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:nodonlydeveloper@gmail.com">nodonlydeveloper@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+919503770736">+91 9503770736</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Pune, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/manish-angular-lead" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/919503770736" target="_blank" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:nodonlydeveloper@gmail.com" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">MK<span class="accent">.</span></div>
+                    <p>Software Architect crafting digital experiences that matter.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>My Projects</h4>
+                    <div class="footer-links">
+                        <a href="https://trezzo.app" target="_blank">Trezzo.app</a>
+                        <a href="https://scrapper.trezzo.app" target="_blank">Lead Scrapper</a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <div class="footer-links">
+                        <a href="https://www.linkedin.com/in/manish-angular-lead" target="_blank">LinkedIn</a>
+                        <a href="https://wa.me/919503770736" target="_blank">WhatsApp</a>
+                        <a href="mailto:nodonlydeveloper@gmail.com">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>© 2025 Manish Kumar. All rights reserved.</p>
+                </div>
+                <div class="footer-powered">
+                    <p>Powered by <a href="https://trezzo.app" target="_blank">Trezzo.app</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
